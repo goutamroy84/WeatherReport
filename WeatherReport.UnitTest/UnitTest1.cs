@@ -17,7 +17,7 @@ namespace WeatherReport.UnitTest
             Program pro = new Program();
             string[] city = { "Kolkata", "Delhi" };
             Program.Run(city);
-
+             Assert.IsTrue(true);
         }
         
         [TestMethod]

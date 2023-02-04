@@ -19,5 +19,13 @@ namespace WeatherReport.UnitTest
             Program.Run(city);
 
         }
+        
+        [TestMethod]
+        public void IsCityFileexists()
+        {
+            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"CityInformation\IndiaCity.json");
+            bool isequal = File.Exists(path);
+            Assert.IsTrue(isequal);
+        }     
     }
 }
